@@ -13,6 +13,14 @@
 		C611900A274913C400A3DE8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6119008274913C400A3DE8B /* Main.storyboard */; };
 		C611900C274913C700A3DE8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C611900B274913C700A3DE8B /* Assets.xcassets */; };
 		C611900F274913C700A3DE8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C611900D274913C700A3DE8B /* LaunchScreen.storyboard */; };
+		C611901A2749258F00A3DE8B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61190192749258F00A3DE8B /* NetworkManager.swift */; };
+		C611901D2749270B00A3DE8B /* OfferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C611901C2749270B00A3DE8B /* OfferModel.swift */; };
+		C611901F274927BB00A3DE8B /* ListOfferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C611901E274927BB00A3DE8B /* ListOfferModel.swift */; };
+		C61190212749280900A3DE8B /* MainOfferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61190202749280900A3DE8B /* MainOfferModel.swift */; };
+		C61190232749395E00A3DE8B /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61190222749395E00A3DE8B /* CityModel.swift */; };
+		C611902527493AC200A3DE8B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C611902427493AC200A3DE8B /* MainView.swift */; };
+		C611902D274ADB4300A3DE8B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C611902B274ADB4300A3DE8B /* CustomTableViewCell.swift */; };
+		C611902E274ADB4300A3DE8B /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C611902C274ADB4300A3DE8B /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		C611900B274913C700A3DE8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C611900E274913C700A3DE8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6119010274913C700A3DE8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C61190192749258F00A3DE8B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C611901C2749270B00A3DE8B /* OfferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferModel.swift; sourceTree = "<group>"; };
+		C611901E274927BB00A3DE8B /* ListOfferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfferModel.swift; sourceTree = "<group>"; };
+		C61190202749280900A3DE8B /* MainOfferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainOfferModel.swift; sourceTree = "<group>"; };
+		C61190222749395E00A3DE8B /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		C611902427493AC200A3DE8B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C611902B274ADB4300A3DE8B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		C611902C274ADB4300A3DE8B /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,47 @@
 		C6119001274913C400A3DE8B /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				C6119026274AD80700A3DE8B /* UITableViewCell */,
+				C611901B274926C700A3DE8B /* OfferModel */,
+				C61190162749254F00A3DE8B /* NetworkManager */,
 				C6119002274913C400A3DE8B /* AppDelegate.swift */,
 				C6119004274913C400A3DE8B /* SceneDelegate.swift */,
 				C6119006274913C400A3DE8B /* ViewController.swift */,
+				C611902427493AC200A3DE8B /* MainView.swift */,
 				C6119008274913C400A3DE8B /* Main.storyboard */,
 				C611900B274913C700A3DE8B /* Assets.xcassets */,
 				C611900D274913C700A3DE8B /* LaunchScreen.storyboard */,
 				C6119010274913C700A3DE8B /* Info.plist */,
 			);
 			path = WeatherApp;
+			sourceTree = "<group>";
+		};
+		C61190162749254F00A3DE8B /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				C61190192749258F00A3DE8B /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		C611901B274926C700A3DE8B /* OfferModel */ = {
+			isa = PBXGroup;
+			children = (
+				C611901C2749270B00A3DE8B /* OfferModel.swift */,
+				C611901E274927BB00A3DE8B /* ListOfferModel.swift */,
+				C61190202749280900A3DE8B /* MainOfferModel.swift */,
+				C61190222749395E00A3DE8B /* CityModel.swift */,
+			);
+			path = OfferModel;
+			sourceTree = "<group>";
+		};
+		C6119026274AD80700A3DE8B /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C611902B274ADB4300A3DE8B /* CustomTableViewCell.swift */,
+				C611902C274ADB4300A3DE8B /* CustomTableViewCell.xib */,
+			);
+			path = UITableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +175,7 @@
 			files = (
 				C611900F274913C700A3DE8B /* LaunchScreen.storyboard in Resources */,
 				C611900C274913C700A3DE8B /* Assets.xcassets in Resources */,
+				C611902E274ADB4300A3DE8B /* CustomTableViewCell.xib in Resources */,
 				C611900A274913C400A3DE8B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +187,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C611901F274927BB00A3DE8B /* ListOfferModel.swift in Sources */,
+				C611902527493AC200A3DE8B /* MainView.swift in Sources */,
+				C611901A2749258F00A3DE8B /* NetworkManager.swift in Sources */,
 				C6119007274913C400A3DE8B /* ViewController.swift in Sources */,
+				C611901D2749270B00A3DE8B /* OfferModel.swift in Sources */,
+				C61190232749395E00A3DE8B /* CityModel.swift in Sources */,
+				C611902D274ADB4300A3DE8B /* CustomTableViewCell.swift in Sources */,
 				C6119003274913C400A3DE8B /* AppDelegate.swift in Sources */,
+				C61190212749280900A3DE8B /* MainOfferModel.swift in Sources */,
 				C6119005274913C400A3DE8B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
