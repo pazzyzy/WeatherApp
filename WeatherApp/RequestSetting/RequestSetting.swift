@@ -7,10 +7,10 @@
 
 import Foundation
 
-class NetworkManager {
+class RequestSetting {
     private init() {}
     
-    static let shared: NetworkManager = NetworkManager()
+    static let shared: RequestSetting = RequestSetting()
     
     func getWeather(city: String, result: @escaping ((OfferModel?)->())) {
      
